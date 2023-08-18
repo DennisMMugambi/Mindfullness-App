@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mindfullnessapp"
+    namespace = "com.example.mindfullnessnewdesign"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.mindfullnessapp"
+        applicationId = "com.example.mindfullnessnewdesign"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

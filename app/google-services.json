@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "351698565057",
+    "project_id": "mindfullness-new",
+    "storage_bucket": "mindfullness-new.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351698565057:android:57834dd1fabd466c4e2140",
+        "android_client_info": {
+          "package_name": "com.example.mindfullnessnewdesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351698565057-o8uhqifa2l2f8a2umpo1gdmgls6c6lqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mindfullnessnewdesign",
+            "certificate_hash": "5655b58f9dfd5ba6f370d7e8dbff03ad8548434d"
+          }
+        },
+        {
+          "client_id": "351698565057-55bp8kap13do1lojbaih7f823cic2qok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7sRIqaVmjgT85Cn5eD25rmy0AKcfJU00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351698565057-55bp8kap13do1lojbaih7f823cic2qok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

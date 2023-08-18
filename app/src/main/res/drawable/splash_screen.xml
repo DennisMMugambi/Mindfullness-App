@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- White background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/accent" /> <!-- Set the background color to white -->
+        </shape>
+    </item>
+
+    <!-- Centered image -->
+    <item
+        android:scaleType="fitCenter"
+        android:gravity="center"
+        android:drawable="@drawable/mindful_launcher" />
+</layer-list>
