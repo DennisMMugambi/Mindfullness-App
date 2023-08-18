@@ -16,7 +16,7 @@ class OnBoardingAdapter(var context: Context): PagerAdapter() {
     private val splashscreenDescriptions = arrayOfNulls<String>(3)
     private val splashscreenimages = intArrayOf(
         R.drawable.butterflies, R.drawable.floral_2,
-        R.drawable.floral_3
+        R.drawable.floral_4
     )
 
     private val onboardingTitles = arrayListOf(
