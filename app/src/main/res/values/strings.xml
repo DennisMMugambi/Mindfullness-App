@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">MindfullnessNewDesign</string>
+    <string name="mindfullness">Mindfulness</string>
+    <string name="skip">Skip</string>
+    <string name="mindfullness_meditation">Mindfulness\nmeditation</string>
+    <string name="mindfullness_description">Mindfullness meditation is just one of many types of meditation, and it promotes presence in the now through focusing on breathing</string>
+    <string name="next">Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mindfullness_description_2">It is a way of living your life, its basic concepts are awareness, openess and presence in the here and now</string>
+    <string name="meditation">Meditation</string>
+    <string name="mindfullness_description_3">On the other hand, meditation is a technique used by many(including the mindfulness school of thought) to achieve an elevated state of mind</string>
 </resources>

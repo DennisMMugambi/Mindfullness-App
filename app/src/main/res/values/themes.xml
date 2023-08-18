@@ -50,4 +50,22 @@
         <item name="android:statusBarColor">@color/accent</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
+
+    <style name="Button2Theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">12dp</item>
+        <item name="cornerSizeBottomLeft">12dp</item>
+        <item name="cornerSizeTopRight">12dp</item>
+        <item name="cornerSizeBottomRight">12dp</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="MyMaterialButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MyApp.Button.CornerRounded</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.Button.CornerRounded" parent="">
+        <item name="cornerSize">16dp</item><!-- Adjust the corner radius as needed -->
+    </style>
 </resources>

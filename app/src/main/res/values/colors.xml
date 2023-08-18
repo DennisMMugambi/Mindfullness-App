@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="accent">#0E133C</color>
+    <color name="accent_lighter">#31317A</color>
+    <color name="app_pink">#EB7FDC</color>
 </resources>
