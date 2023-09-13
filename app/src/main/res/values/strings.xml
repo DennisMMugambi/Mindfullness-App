@@ -20,4 +20,9 @@
     <string name="stay_focused">Staying focused</string>
     <string name="learn_meditation">Learn to meditate</string>
     <string name="invest_growth">Invest in personal growth</string>
+    <string name="feeling_now">Let\'s see how you\nare feeling now</string>
+    <string name="take_a_moment">Take a moment to check with yourself.How are you feeling?</string>
+    <string name="very_relaxed">Very relaxed</string>
+    <string name="relaxed">Relaxed</string>
+    <string name="tense">Tense</string>
 </resources>

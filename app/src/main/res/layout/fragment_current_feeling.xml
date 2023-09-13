@@ -20,7 +20,7 @@
                 android:id="@+id/page_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/whats_on_mind"
+                android:text="@string/feeling_now"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_25sp"
                 android:fontFamily="@font/poppins_bold"
@@ -43,6 +43,22 @@
                 app:layout_constraintBottom_toBottomOf="@+id/page_title"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/mood_animation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:scaleType="centerCrop"
+                app:lottie_rawRes="@raw/mood_today"
+                app:lottie_loop="true"
+                app:layout_constraintHeight_percent="0.34"
+                app:layout_constraintTop_toBottomOf="@+id/page_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/onboard_card"
+                />
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/onboard_card"
                 android:layout_width="match_parent"
@@ -53,7 +69,7 @@
                 android:layout_marginBottom="@dimen/_20dp"
                 app:cardBackgroundColor="@color/accent_lighter"
                 app:cardCornerRadius="@dimen/_20dp"
-                app:layout_constraintTop_toBottomOf="@+id/page_title"
+                app:layout_constraintTop_toBottomOf="@+id/mood_animation"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
@@ -68,7 +84,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10dp"
                         android:layout_marginTop="@dimen/_10dp"
-                        android:text="@string/choose_an_option"
+                        android:text="@string/take_a_moment"
                         android:fontFamily="@font/poppins"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sp"
@@ -95,20 +111,20 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
-                        <RadioButton
-                            android:id="@+id/radio_btn"
-                            android:layout_width="@dimen/_50dp"
-                            android:layout_height="@dimen/_50dp"
-                            android:layout_marginStart="@dimen/_10dp"
-                            android:buttonTint="@color/app_pink"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"/>
+                            <RadioButton
+                                android:id="@+id/radio_btn"
+                                android:layout_width="@dimen/_50dp"
+                                android:layout_height="@dimen/_50dp"
+                                android:layout_marginStart="@dimen/_10dp"
+                                android:buttonTint="@color/app_pink"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/manage_anxiety"
+                                android:text="@string/very_relaxed"
                                 android:textColor="@color/white"
                                 app:layout_constraintStart_toEndOf="@+id/radio_btn"
                                 app:layout_constraintTop_toTopOf="parent"
@@ -150,7 +166,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/sleep_soundly"
+                                android:text="@string/relaxed"
                                 android:textColor="@color/white"
                                 app:layout_constraintStart_toEndOf="@+id/radio2_btn"
                                 app:layout_constraintTop_toTopOf="parent"
@@ -192,177 +208,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/being_active"
+                                android:text="@string/tense"
                                 android:textColor="@color/white"
                                 app:layout_constraintStart_toEndOf="@+id/radio3_btn"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/new_card"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10dp"
-                        android:layout_marginStart="@dimen/_15dp"
-                        android:layout_marginEnd="@dimen/_15dp"
-                        app:cardCornerRadius="@dimen/_50dp"
-                        app:strokeWidth="@dimen/_0dp"
-                        app:cardBackgroundColor="@color/accent"
-                        app:layout_constraintTop_toBottomOf="@+id/active_card"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <RadioButton
-                                android:id="@+id/radio4_btn"
-                                android:layout_width="@dimen/_50dp"
-                                android:layout_height="@dimen/_50dp"
-                                android:layout_marginStart="@dimen/_10dp"
-                                android:buttonTint="@color/app_pink"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/something_new"
-                                android:textColor="@color/white"
-                                app:layout_constraintStart_toEndOf="@+id/radio4_btn"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/focus_card"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10dp"
-                        android:layout_marginStart="@dimen/_15dp"
-                        android:layout_marginEnd="@dimen/_15dp"
-                        app:cardCornerRadius="@dimen/_50dp"
-                        app:strokeWidth="@dimen/_0dp"
-                        app:cardBackgroundColor="@color/accent"
-                        app:layout_constraintTop_toBottomOf="@+id/new_card"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <RadioButton
-                                android:id="@+id/radio5_btn"
-                                android:layout_width="@dimen/_50dp"
-                                android:layout_height="@dimen/_50dp"
-                                android:layout_marginStart="@dimen/_10dp"
-                                android:buttonTint="@color/app_pink"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/stay_focused"
-                                android:textColor="@color/white"
-                                app:layout_constraintStart_toEndOf="@+id/radio5_btn"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/learn_card"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10dp"
-                        android:layout_marginStart="@dimen/_15dp"
-                        android:layout_marginEnd="@dimen/_15dp"
-                        app:cardCornerRadius="@dimen/_50dp"
-                        app:strokeWidth="@dimen/_0dp"
-                        app:cardBackgroundColor="@color/accent"
-                        app:layout_constraintTop_toBottomOf="@+id/focus_card"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <RadioButton
-                                android:id="@+id/radio6_btn"
-                                android:layout_width="@dimen/_50dp"
-                                android:layout_height="@dimen/_50dp"
-                                android:layout_marginStart="@dimen/_10dp"
-                                android:buttonTint="@color/app_pink"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/learn_meditation"
-                                android:textColor="@color/white"
-                                app:layout_constraintStart_toEndOf="@+id/radio6_btn"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                />
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/invest_card"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10dp"
-                        android:layout_marginStart="@dimen/_15dp"
-                        android:layout_marginEnd="@dimen/_15dp"
-                        app:cardCornerRadius="@dimen/_50dp"
-                        app:strokeWidth="@dimen/_0dp"
-                        app:cardBackgroundColor="@color/accent"
-                        app:layout_constraintTop_toBottomOf="@+id/learn_card"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <RadioButton
-                                android:id="@+id/radio7_btn"
-                                android:layout_width="@dimen/_50dp"
-                                android:layout_height="@dimen/_50dp"
-                                android:layout_marginStart="@dimen/_10dp"
-                                android:buttonTint="@color/app_pink"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/invest_growth"
-                                android:textColor="@color/white"
-                                app:layout_constraintStart_toEndOf="@+id/radio7_btn"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 />

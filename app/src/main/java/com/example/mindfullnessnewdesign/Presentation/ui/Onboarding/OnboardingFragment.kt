@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager.widget.ViewPager
 import com.example.mindfullnessnewdesign.Presentation.adapters.OnBoardingAdapter
 import com.example.mindfullnessnewdesign.R
@@ -28,11 +29,12 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     private fun loadSliders(){
         val onBoardingAdapter = OnBoardingAdapter(requireContext())
-        binding.pager.adapter = onBoardingAdapter
-        //binding.tDots.setupWithViewPager(binding.pager, true)
+        val springDotsIndicator = binding.tDots
+        val viewPager = binding.pager
+        viewPager.adapter = onBoardingAdapter
+        springDotsIndicator.attachTo(viewPager)
         onBoardingAdapter.notifyDataSetChanged()
 
-        //binding.tvSliderTitle.setText(R.string.onboarding_title_one)
         binding.pager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrollStateChanged(state: Int) {
 
@@ -87,9 +89,7 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             }
 
             if (isLastScreen) {
-              //  binding.loading.visibility = View.VISIBLE
-                // showAuthModule()
-               // findNavController().navigate(R.id.action_onboardingFragment_to_loginFragment)
+                findNavController().navigate(R.id.action_onboarding_to_optionsSelection)
             }
         }
 

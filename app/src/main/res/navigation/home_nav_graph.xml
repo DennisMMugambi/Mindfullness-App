@@ -10,6 +10,37 @@
         android:name="com.example.mindfullnessnewdesign.Presentation.ui.Onboarding.OnboardingFragment"
         tools:layout="@layout/fragment_onboarding">
 
+        <action
+            android:id="@+id/action_onboarding_to_optionsSelection"
+            app:destination="@id/options_selection"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/options_selection"
+        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Customization.OptionsSelectionFragment"
+        tools:layout="@layout/fragment_options_selection"
+        >
+
+        <action
+            android:id="@+id/action_options_to_moodToday"
+            app:destination="@id/feeling_today"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/feeling_today"
+        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Customization.CurrentFeelingFragment"
+        tools:layout="@layout/fragment_current_feeling">
+
     </fragment>
 
 </navigation>

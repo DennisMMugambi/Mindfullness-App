@@ -74,16 +74,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <com.google.android.material.tabs.TabLayout
+                    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
                         android:id="@+id/tDots"
                         android:layout_width="@dimen/_0dp"
                         android:layout_height="@dimen/_20dp"
-                        android:backgroundTintMode="screen"
                         android:layout_marginTop="@dimen/_30dp"
                         android:layout_marginStart="@dimen/_10dp"
-                        app:tabBackground="@drawable/tab_selector"
-                        app:tabGravity="center"
-                        app:tabIndicatorHeight="0dp"
+                        app:dotsColor="@android:color/darker_gray"
+                        app:selectedDotColor="@color/app_pink"
                         app:layout_constraintWidth_percent="0.3"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>

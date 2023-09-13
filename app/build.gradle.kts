@@ -102,6 +102,7 @@ dependencies {
     //circle image view
     implementation("de.hdodenhof:circleimageview:3.1.0")
 
-
+    //tab indicator
+    implementation("com.tbuonomo:dotsindicator:5.0")
 
 }
