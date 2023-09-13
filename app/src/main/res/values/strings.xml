@@ -11,4 +11,13 @@
     <string name="meditation">Meditation</string>
     <string name="mindfullness_description_3">On the other hand, meditation is a technique used by many(including the mindfulness school of thought) to achieve an elevated state of mind</string>
     <string name="get_started">Get started</string>
+    <string name="whats_on_mind">What\'s on your\nmind?</string>
+    <string name="choose_an_option">Choose an option for now.You can explore other options later</string>
+    <string name="manage_anxiety">Manage anxiety and stress</string>
+    <string name="sleep_soundly">Sleeping soundly</string>
+    <string name="being_active">being more active</string>
+    <string name="something_new">Try something new</string>
+    <string name="stay_focused">Staying focused</string>
+    <string name="learn_meditation">Learn to meditate</string>
+    <string name="invest_growth">Invest in personal growth</string>
 </resources>
