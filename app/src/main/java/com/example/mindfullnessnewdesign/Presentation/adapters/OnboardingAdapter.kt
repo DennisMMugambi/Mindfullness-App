@@ -13,19 +13,11 @@ import com.example.mindfullnessnewdesign.R
 class OnBoardingAdapter(var context: Context): PagerAdapter() {
     private val layoutInflater: LayoutInflater
 
-    private val splashscreenDescriptions = arrayOfNulls<String>(3)
     private val splashscreenimages = intArrayOf(
         R.drawable.butterflies, R.drawable.floral_2,
         R.drawable.floral_4
     )
 
-    private val onboardingTitles = arrayListOf(
-        R.string.mindfullness_meditation, R.string.mindfullness, R.string.meditation
-    )
-
-    private val onboardingDescriptions = arrayListOf(
-        R.string.mindfullness_description, R.string.mindfullness_description_2, R.string.mindfullness_description_3
-    )
     init {
         layoutInflater = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
     }
@@ -35,7 +27,6 @@ class OnBoardingAdapter(var context: Context): PagerAdapter() {
         return view === `object`
     }
 
-    // // Returns the number of pages/items to be displayed in the ViewPager.
     override fun getCount(): Int {
         return splashscreenimages.size
 
@@ -45,19 +36,9 @@ class OnBoardingAdapter(var context: Context): PagerAdapter() {
         val view: View = layoutInflater.inflate(R.layout.layout_onboard, container, false)
 
         val imgSplashScreen: ImageView
-        val onboardingTitle: TextView
-        val onboardingDescription: TextView
 
         imgSplashScreen = view.findViewById(R.id.onboarding_image)
-        onboardingTitle = view.findViewById(R.id.card_title)
-        onboardingDescription = view.findViewById(R.id.card_description)
-//        tvSplashScreenDescri=view.findViewById(R.id.tv_slider_descr)
-
-        //   tvSplashScreenDescri.text=splashscreenDescriptions[position]
-
         imgSplashScreen.setImageResource(splashscreenimages[position])
-        onboardingTitle.setText(onboardingTitles[position])
-        onboardingDescription.setText(onboardingDescriptions[position])
 
         container.addView(view)
 

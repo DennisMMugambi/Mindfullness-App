@@ -44,23 +44,23 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             ) {
                 when (position) {
                     0 -> {
-//                        binding.tvSliderDescr.setText(R.string.screen_1_description)
-//                        binding.tvSliderTitle.setText(R.string.onboarding_title_one)
-//                        binding.btnGetStarted.setText(R.string.next)
+                        binding.cardTitle.setText(R.string.mindfullness_meditation)
+                        binding.cardDescription.setText(R.string.mindfullness_description)
+                        binding.btnGetStarted.setText(R.string.next)
                     }
                     1 -> {
-//                        binding.tvSliderDescr.setText(R.string.screen_2_description)
-//                        binding.tvSliderTitle.setText(R.string.onboarding_title_two)
-//                        binding.btnGetStarted.setText(R.string.next)
+                        binding.cardTitle.setText(R.string.mindfullness)
+                        binding.cardDescription.setText(R.string.mindfullness_description_2)
+                        binding.btnGetStarted.setText(R.string.next)
                     }
                     2-> {
-//                        binding.tvSliderDescr.setText(R.string.screen_3_description)
-//                        binding.tvSliderTitle.setText(R.string.onboarding_title_three)
-//                        binding.btnGetStarted.setText(R.string.get_started)
+                        binding.cardTitle.setText(R.string.meditation)
+                        binding.cardDescription.setText(R.string.mindfullness_description_3)
+                        binding.btnGetStarted.setText(R.string.get_started)
                     }
                     else -> {
-                        // binding.tvSliderDescr.setText(R.string.screen_1_description)
-                        // binding.tvSliderTitle.setText(R.string.onboarding_title_one)
+                         binding.cardTitle.setText(R.string.mindfullness_meditation)
+                         binding.cardDescription.setText(R.string.mindfullness_description)
                     }
                 }
             }
@@ -79,7 +79,7 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
     }
 
     private fun scrollToNext() {
-      //  binding.btnGetStarted.setOnClickListener {
+        binding.btnGetStarted.setOnClickListener {
             when(binding.pager.currentItem) {
                 0 -> { binding.pager.currentItem += 1}
                 1 -> { binding.pager.currentItem += 1}
@@ -91,12 +91,12 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
                 // showAuthModule()
                // findNavController().navigate(R.id.action_onboardingFragment_to_loginFragment)
             }
-      //  }
+        }
 
-//        binding.skipBtn.setOnClickListener {
-//            binding.pager.currentItem = 2
-//            // binding.btnGetStarted.setText(R.string.get_started)
-//        }
+        binding.btnSkip.setOnClickListener {
+            binding.pager.currentItem = 2
+            binding.btnGetStarted.setText(R.string.get_started)
+        }
     }
 
 }
