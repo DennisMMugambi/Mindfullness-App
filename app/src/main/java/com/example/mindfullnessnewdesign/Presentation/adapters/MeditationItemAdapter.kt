@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mindfullnessnewdesign.Domain.Models.MeditationItem
@@ -26,8 +27,8 @@ class MeditationItemAdapter(private var itemList: List<MeditationItem>?) : Recyc
         private val meditationImageView : ImageView = itemView.findViewById(R.id.meditation_image)
         private val meditationTitle : TextView = itemView.findViewById(R.id.meditation_title)
         private val meditationDescription : TextView = itemView.findViewById(R.id.meditation_description)
-        private val meditationCourse : Button = itemView.findViewById(R.id.btnCourse)
-        private val meditationDuration : Button = itemView.findViewById(R.id.btnLength)
+        private val meditationCourse : TextView = itemView.findViewById(R.id.tv_course)
+        private val meditationDuration : TextView = itemView.findViewById(R.id.tv_duration)
 
         init {
             itemView.setOnClickListener {
@@ -42,7 +43,7 @@ class MeditationItemAdapter(private var itemList: List<MeditationItem>?) : Recyc
         fun bind(item: MeditationItem) {
             meditationImageView.setImageResource(item.meditationImage)
             meditationTitle.text = item.meditationTitle
-            meditationDescription.text = item.meditationTitle
+            meditationDescription.text = item.meditationDescription
             meditationCourse.text = item.meditationCourse
             meditationDuration.text = item.meditationDuration
         }

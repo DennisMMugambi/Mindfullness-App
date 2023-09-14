@@ -42,7 +42,7 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/onboard_card"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_15dp"
             android:layout_marginTop="@dimen/_20dp"
             android:layout_marginEnd="@dimen/_15dp"
@@ -55,9 +55,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/page_title">
 
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/card_description"
@@ -71,9 +75,12 @@
                     android:text="@string/choose_an_option"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_15sp"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:layout_constraintVertical_chainStyle="packed"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/anxiety_card"/>
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/anxiety_card"
@@ -87,6 +94,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/card_description"
+                    app:layout_constraintBottom_toTopOf="@+id/sleep_card"
                     app:strokeWidth="@dimen/_0dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -128,6 +136,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/anxiety_card"
+                    app:layout_constraintBottom_toTopOf="@+id/active_card"
                     app:strokeWidth="@dimen/_0dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -169,6 +178,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/sleep_card"
+                    app:layout_constraintBottom_toTopOf="@+id/new_card"
                     app:strokeWidth="@dimen/_0dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -210,6 +220,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/active_card"
+                    app:layout_constraintBottom_toTopOf="@+id/focus_card"
                     app:strokeWidth="@dimen/_0dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -251,6 +262,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/new_card"
+                    app:layout_constraintBottom_toTopOf="@+id/learn_card"
                     app:strokeWidth="@dimen/_0dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -292,6 +304,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/focus_card"
+                    app:layout_constraintBottom_toTopOf="@+id/invest_card"
                     app:strokeWidth="@dimen/_0dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -333,6 +346,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/learn_card"
+                    app:layout_constraintBottom_toTopOf="@+id/btnGetStarted"
                     app:strokeWidth="@dimen/_0dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -368,6 +382,7 @@
                     android:layout_height="@dimen/_50dp"
                     android:layout_marginStart="@dimen/_20dp"
                     android:layout_marginEnd="@dimen/_20dp"
+                    android:layout_marginTop="@dimen/_20dp"
                     android:layout_marginBottom="@dimen/_20dp"
                     android:background="@drawable/linear_pink"
                     android:text="@string/next"
@@ -379,10 +394,13 @@
                     app:backgroundTint="@null"
                     app:cornerRadius="@dimen/_50dp"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/invest_card"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
         </com.google.android.material.card.MaterialCardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
