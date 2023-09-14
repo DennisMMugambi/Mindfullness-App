@@ -25,4 +25,11 @@
     <string name="very_relaxed">Very relaxed</string>
     <string name="relaxed">Relaxed</string>
     <string name="tense">Tense</string>
+    <string name="thats_good">That\'s good news</string>
+    <string name="option_suggestion_sample">Learning the right breathing techniques can help you feel more connected to youur body by bringing awareness away from the worrie in your head.\nIf you force your mind back to breathing, you are missing out on the whole point of meditation: self acceptance and achieving a heightened sense of consciousness.</string>
+    <string name="try_basic">Try a basic exercise now</string>
+    <string name="basic">Basic</string>
+    <string name="course">Course</string>
+    <string name="sample_duration">3-10 min</string>
+    <string name="learn_fundamentals">Learn the fundamentals of meditation</string>
 </resources>

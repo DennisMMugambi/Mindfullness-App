@@ -50,6 +50,7 @@
                 android:layout_marginStart="@dimen/_15dp"
                 android:layout_marginEnd="@dimen/_15dp"
                 android:scaleType="centerCrop"
+                app:lottie_autoPlay="true"
                 app:lottie_rawRes="@raw/mood_today"
                 app:lottie_loop="true"
                 app:layout_constraintHeight_percent="0.34"
