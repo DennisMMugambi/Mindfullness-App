@@ -41,6 +41,21 @@
         android:name="com.example.mindfullnessnewdesign.Presentation.ui.Customization.CurrentFeelingFragment"
         tools:layout="@layout/fragment_current_feeling">
 
+        <action
+            android:id="@+id/action_moodToday_to_meditationSuggestion"
+            app:destination="@id/meditation_suggestion"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/meditation_suggestion"
+        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Customization.OptionsSuggestionFragment"
+        tools:layout="@layout/fragment_options_suggestion">
+
     </fragment>
 
 </navigation>
