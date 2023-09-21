@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/home"
+        android:id="@+id/home"
+        android:icon="@drawable/home_button" />
+
+    <item
+        android:title="@string/meditate"
+        android:id="@+id/meditate"
+        android:icon="@drawable/lotus" />
+
+    <item
+        android:title="@string/discover"
+        android:id="@+id/discover"
+        android:icon="@drawable/search" />
+
+    <item
+        android:title="@string/profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/user" />
+</menu>

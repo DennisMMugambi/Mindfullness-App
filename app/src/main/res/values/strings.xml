@@ -33,4 +33,8 @@
     <string name="sample_duration">3-10 min</string>
     <string name="learn_fundamentals">Learn the fundamentals of meditation</string>
     <string name="maybe_later">Maybe later</string>
+    <string name="home">Home</string>
+    <string name="meditate">Meditate</string>
+    <string name="discover">Discover</string>
+    <string name="profile">My Profile</string>
 </resources>

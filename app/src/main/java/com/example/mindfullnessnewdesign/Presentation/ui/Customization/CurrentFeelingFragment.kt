@@ -6,7 +6,9 @@ import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.example.mindfullnessnewdesign.R
 import com.example.mindfullnessnewdesign.databinding.FragmentCurrentFeelingBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class CurrentFeelingFragment : Fragment(R.layout.fragment_current_feeling) {
 
     private lateinit var binding: FragmentCurrentFeelingBinding

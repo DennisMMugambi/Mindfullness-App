@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.mindfullnessnewdesign.R
 import com.example.mindfullnessnewdesign.databinding.FragmentOptionsSelectionBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class OptionsSelectionFragment : Fragment(R.layout.fragment_options_selection) {
 
     private lateinit var binding: FragmentOptionsSelectionBinding

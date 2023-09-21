@@ -10,8 +10,9 @@ import com.example.mindfullnessnewdesign.Presentation.adapters.OnBoardingAdapter
 import com.example.mindfullnessnewdesign.R
 import com.example.mindfullnessnewdesign.Utils.AutoSlideAdvertisement
 import com.example.mindfullnessnewdesign.databinding.FragmentOnboardingBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     private lateinit var binding : FragmentOnboardingBinding

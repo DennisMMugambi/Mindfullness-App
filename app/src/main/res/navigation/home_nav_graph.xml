@@ -2,59 +2,38 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/gfg_graph"
-    app:startDestination="@+id/onboarding">
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@+id/home">
 
     <fragment
-        android:id="@+id/onboarding"
-        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Onboarding.OnboardingFragment"
-        tools:layout="@layout/fragment_onboarding">
+        android:id="@+id/home"
+        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Home.HomeFragment"
+        tools:layout="@layout/fragment_home">
 
-        <action
-            android:id="@+id/action_onboarding_to_optionsSelection"
-            app:destination="@id/options_selection"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
 
     </fragment>
 
     <fragment
-        android:id="@+id/options_selection"
-        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Customization.OptionsSelectionFragment"
-        tools:layout="@layout/fragment_options_selection"
-        >
+        android:id="@+id/meditate"
+        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Meditate.MeditateFragment"
+        tools:layout="@layout/fragment_meditate">
 
-        <action
-            android:id="@+id/action_options_to_moodToday"
-            app:destination="@id/feeling_today"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
 
     </fragment>
 
     <fragment
-        android:id="@+id/feeling_today"
-        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Customization.CurrentFeelingFragment"
-        tools:layout="@layout/fragment_current_feeling">
+        android:id="@+id/discover"
+        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Discover.DiscoverFragment"
+        tools:layout="@layout/fragment_discover">
 
-        <action
-            android:id="@+id/action_moodToday_to_meditationSuggestion"
-            app:destination="@id/meditation_suggestion"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
 
     </fragment>
 
     <fragment
-        android:id="@+id/meditation_suggestion"
-        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Customization.OptionsSuggestionFragment"
-        tools:layout="@layout/fragment_options_suggestion">
+        android:id="@+id/profile"
+        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+
 
     </fragment>
 
