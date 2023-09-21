@@ -32,7 +32,7 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
         val springDotsIndicator = binding.tDots
         val viewPager = binding.pager
         viewPager.adapter = onBoardingAdapter
-        springDotsIndicator.attachTo(viewPager)
+        springDotsIndicator.setupWithViewPager(viewPager, true)
         onBoardingAdapter.notifyDataSetChanged()
 
         binding.pager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {

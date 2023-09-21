@@ -69,17 +69,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                <com.google.android.material.tabs.TabLayout
                     android:id="@+id/tDots"
                     android:layout_width="@dimen/_0dp"
-                    android:layout_height="@dimen/_20dp"
+                    android:layout_height="@dimen/_10dp"
                     android:layout_marginStart="@dimen/_20dp"
                     android:layout_marginTop="@dimen/_30dp"
-                    app:dotsColor="@android:color/darker_gray"
+                    android:background="@android:color/transparent"
+                    app:tabBackground="@drawable/tab_selector"
+                    app:tabIndicatorHeight="@dimen/_0dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintWidth_percent="0.3"
-                    app:selectedDotColor="@color/app_pink" />
+                    app:selectedDotColor="@android:color/holo_red_dark"/>
 
                 <TextView
                     android:id="@+id/card_title"
