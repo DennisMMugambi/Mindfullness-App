@@ -23,6 +23,12 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        setUpNavigation()
+
+        supportActionBar?.title = "Hi, Dennis,"
+    }
+
+    private fun setUpNavigation() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.home_nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
 

@@ -37,4 +37,6 @@
     <string name="meditate">Meditate</string>
     <string name="discover">Discover</string>
     <string name="profile">My Profile</string>
+    <string name="feeling_today">How are you feeling today?</string>
+    <string name="daily_exercises">Daily exercises</string>
 </resources>

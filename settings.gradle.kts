@@ -15,4 +15,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "MindfullnessNewDesign"
 include(":app")
- 
+include(":common")
+include(":data")
+include(":network")
+include(":domain")
