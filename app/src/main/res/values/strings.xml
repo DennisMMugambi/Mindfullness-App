@@ -39,4 +39,6 @@
     <string name="profile">My Profile</string>
     <string name="feeling_today">How are you feeling today?</string>
     <string name="daily_exercises">Daily exercises</string>
+    <string name="morning_coffee">Morning Coffee</string>
+    <string name="sample_description">learn the fundamentals of \nmeditation</string>
 </resources>
