@@ -93,7 +93,8 @@
                     android:textSize="@dimen/_15sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/anxiety_card"/>
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/anxiety_card"
@@ -107,6 +108,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/card_description"
+                    app:layout_constraintBottom_toTopOf="@+id/sleep_card"
                     app:strokeWidth="@dimen/_0dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -148,6 +150,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/anxiety_card"
+                    app:layout_constraintBottom_toTopOf="@+id/active_card"
                     app:strokeWidth="@dimen/_0dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -189,6 +192,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/sleep_card"
+                    app:layout_constraintBottom_toTopOf="@+id/btnGetStarted"
                     app:strokeWidth="@dimen/_0dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -225,7 +229,8 @@
                     android:layout_height="@dimen/_50dp"
                     android:layout_marginStart="@dimen/_20dp"
                     android:layout_marginEnd="@dimen/_20dp"
-                    android:layout_marginTop="@dimen/_50dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_marginBottom="@dimen/_10dp"
                     android:background="@drawable/linear_pink"
                     android:text="@string/next"
                     android:textAlignment="center"

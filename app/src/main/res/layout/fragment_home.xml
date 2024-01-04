@@ -128,7 +128,7 @@
             android:layout_marginTop="@dimen/_10dp"
             android:padding="@dimen/_10dp"
             android:textSize="@dimen/_16sp"
-            android:text="@string/daily_exercises"
+            android:text="@string/recommended"
             app:layout_constraintTop_toBottomOf="@+id/challeging_times"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -149,7 +149,7 @@
             android:layout_height="@dimen/_160dp"
             android:layout_marginStart="@dimen/_15dp"
             android:layout_marginEnd="@dimen/_15dp"
-            android:layout_marginBottom="@dimen/_200dp"
+            android:layout_marginBottom="@dimen/_100dp"
             app:cardBackgroundColor="@color/accent_lighter"
             app:cardCornerRadius="@dimen/_20dp"
             app:layout_constraintStart_toStartOf="parent"
