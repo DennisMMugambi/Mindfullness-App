@@ -52,4 +52,14 @@
     <string name="kids">Kids</string>
     <string name="quick_n_easy">Quick and easy</string>
     <string name="searchbar_hint">Search</string>
+    <string name="john_doe">John Doe</string>
+    <string name="doe_email">john.doe@gmail.com</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="favorites">Favorites</string>
+    <string name="help_center">Help Center</string>
+    <string name="Terms_n_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="faq">FAQs</string>
+    <string name="log_out"><![CDATA[Log Out.]]></string>
 </resources>
