@@ -23,7 +23,7 @@ class OptionsSuggestionFragment : Fragment(R.layout.fragment_options_suggestion)
 
     val meditationList = listOf(
         MeditationItem(
-            meditationImage = R.drawable.mind_onboard_1, // Replace with the actual image resource ID
+            meditationImage = R.drawable.floral_2, // Replace with the actual image resource ID
             meditationTitle = "Basic",
             meditationDescription = "Learn the fundamentals of meditation",
             meditationCourse = "Beginner's Guide",
