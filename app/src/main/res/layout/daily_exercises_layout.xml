@@ -51,7 +51,7 @@
                 android:layout_marginStart="@dimen/_18dp"
                 android:layout_marginTop="@dimen/_15dp"
                 app:cardBackgroundColor="@color/app_pink"
-                app:cardCornerRadius="@dimen/_50dp"
+                app:cardCornerRadius="@dimen/_20dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title">
 
@@ -89,7 +89,7 @@
                 android:layout_marginStart="@dimen/_5dp"
                 android:layout_marginTop="@dimen/_15dp"
                 app:cardBackgroundColor="@color/app_pink"
-                app:cardCornerRadius="@dimen/_50dp"
+                app:cardCornerRadius="@dimen/_20dp"
                 app:layout_constraintStart_toEndOf="@+id/course"
                 app:layout_constraintTop_toBottomOf="@+id/title">
 

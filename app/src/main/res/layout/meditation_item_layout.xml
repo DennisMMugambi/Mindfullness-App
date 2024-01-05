@@ -30,7 +30,7 @@
             android:id="@+id/meditation_image"
             android:layout_width="@dimen/_80dp"
             android:layout_height="@dimen/_100dp"
-            android:src="@drawable/mind_onboard_1"
+            android:src="@drawable/floral_2"
             android:layout_marginStart="@dimen/_20dp"
             app:layout_constraintVertical_bias="0.65"
             android:scaleType="centerCrop"
@@ -64,7 +64,7 @@
             android:textColor="@color/black"
             android:theme="@style/MyMaterialButtonStyle"
             app:cardBackgroundColor="@color/app_pink"
-            app:cardCornerRadius="@dimen/_50dp"
+            app:cardCornerRadius="@dimen/_20dp"
             app:layout_constraintStart_toStartOf="@+id/meditation_title"
             app:layout_constraintTop_toBottomOf="@+id/meditation_title">
 
@@ -88,7 +88,7 @@
             android:theme="@style/MyMaterialButtonStyle"
             android:layout_marginStart="@dimen/_5dp"
             app:cardBackgroundColor="@color/app_pink"
-            app:cardCornerRadius="@dimen/_50dp"
+            app:cardCornerRadius="@dimen/_20dp"
             app:layout_constraintStart_toEndOf="@+id/btnCourse"
             app:layout_constraintTop_toTopOf="@+id/btnCourse">
 

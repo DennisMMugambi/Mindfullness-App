@@ -9,7 +9,7 @@
         android:id="@+id/onboarding_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/mind_onboard_1"
+        android:src="@drawable/floral_2"
         android:layout_marginTop="@dimen/_20dp"
         android:layout_marginStart="@dimen/_15dp"
         android:layout_marginEnd="@dimen/_15dp"
