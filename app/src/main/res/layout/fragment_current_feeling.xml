@@ -55,7 +55,7 @@
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/mood_today" />
 
-        <com.google.android.material.card.MaterialCardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/onboard_card"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_0dp"
@@ -96,7 +96,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toTopOf="@+id/anxiety_card"/>
 
-                <com.google.android.material.card.MaterialCardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/anxiety_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -136,9 +136,9 @@
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
-                </com.google.android.material.card.MaterialCardView>
+                </androidx.cardview.widget.CardView>
 
-                <com.google.android.material.card.MaterialCardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/sleep_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -178,9 +178,9 @@
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
-                </com.google.android.material.card.MaterialCardView>
+                </androidx.cardview.widget.CardView>
 
-                <com.google.android.material.card.MaterialCardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/active_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -221,7 +221,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-                </com.google.android.material.card.MaterialCardView>
+                </androidx.cardview.widget.CardView>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnGetStarted"
@@ -231,7 +231,7 @@
                     android:layout_marginEnd="@dimen/_20dp"
                     android:layout_marginTop="@dimen/_20dp"
                     android:layout_marginBottom="@dimen/_10dp"
-                    android:background="@drawable/linear_pink"
+                    android:background="@drawable/linear_green"
                     android:text="@string/next"
                     android:textAlignment="center"
                     android:textAllCaps="false"
@@ -248,7 +248,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.core.widget.NestedScrollView>
-        </com.google.android.material.card.MaterialCardView>
+        </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
