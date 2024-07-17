@@ -11,8 +11,8 @@
         tools:layout="@layout/fragment_onboarding">
 
         <action
-            android:id="@+id/action_onboarding_to_optionsSelection"
-            app:destination="@id/options_selection"
+            android:id="@+id/action_onboarding_to_login"
+            app:destination="@id/login"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
@@ -54,6 +54,36 @@
     <fragment
         android:id="@+id/meditation_suggestion"
         android:name="com.example.mindfullnessnewdesign.Presentation.ui.Customization.OptionsSuggestionFragment"
+        tools:layout="@layout/fragment_options_suggestion">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Auth.LoginFragment"
+        tools:layout="@layout/fragment_options_suggestion">
+
+        <action
+            android:id="@+id/login_to_optionsSelection"
+            app:destination="@id/options_selection"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_login_to_signUp"
+            app:destination="@id/sign_up"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sign_up"
+        android:name="com.example.mindfullnessnewdesign.Presentation.ui.Auth.SignUpFragment"
         tools:layout="@layout/fragment_options_suggestion">
 
     </fragment>

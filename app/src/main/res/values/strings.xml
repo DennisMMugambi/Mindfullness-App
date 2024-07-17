@@ -63,4 +63,12 @@
     <string name="faq">FAQs</string>
     <string name="log_out"><![CDATA[Log Out.]]></string>
     <string name="become_member">Become a member!</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="sign_up"><u>sign up instead</u></string>
+    <string name="full_name">Full name</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="sign_up_">Sign up</string>
 </resources>

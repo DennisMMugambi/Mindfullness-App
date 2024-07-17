@@ -90,7 +90,7 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             }
 
             if (isLastScreen) {
-                findNavController().navigate(R.id.action_onboarding_to_optionsSelection)
+                findNavController().navigate(R.id.action_onboarding_to_login)
             }
         }
 

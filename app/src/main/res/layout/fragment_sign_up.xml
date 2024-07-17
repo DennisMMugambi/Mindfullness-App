@@ -12,18 +12,31 @@
         android:layout_height="match_parent"
         android:background="@color/accent">
 
+        <TextView
+            android:id="@+id/sign_up_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/sign_up_"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/sign_up_animation"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_0dp"
-            android:layout_marginTop="@dimen/_40dp"
             android:layout_marginStart="@dimen/_15dp"
             android:layout_marginEnd="@dimen/_15dp"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.34"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_title"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/login_2" />
@@ -40,6 +53,142 @@
             app:layout_constraintTop_toBottomOf="@+id/sign_up_animation"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:hint="@string/full_name"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginStart="@dimen/_25dp"
+            android:layout_marginEnd="@dimen/_25dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/_30dp"
+            app:boxCornerRadiusBottomStart="@dimen/_30dp"
+            app:boxCornerRadiusTopEnd="@dimen/_30dp"
+            app:boxCornerRadiusTopStart="@dimen/_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/page_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:textSize="@dimen/_14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:hint="@string/email"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginStart="@dimen/_25dp"
+            android:layout_marginEnd="@dimen/_25dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/_30dp"
+            app:boxCornerRadiusBottomStart="@dimen/_30dp"
+            app:boxCornerRadiusTopEnd="@dimen/_30dp"
+            app:boxCornerRadiusTopStart="@dimen/_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_et">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emaill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:textSize="@dimen/_14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:hint="@string/password"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginStart="@dimen/_25dp"
+            android:layout_marginEnd="@dimen/_25dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/_30dp"
+            app:boxCornerRadiusBottomStart="@dimen/_30dp"
+            app:boxCornerRadiusTopEnd="@dimen/_30dp"
+            app:boxCornerRadiusTopStart="@dimen/_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_et">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:textSize="@dimen/_14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirm_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:hint="@string/confirm_password"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginStart="@dimen/_25dp"
+            android:layout_marginEnd="@dimen/_25dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="@dimen/_30dp"
+            app:boxCornerRadiusBottomStart="@dimen/_30dp"
+            app:boxCornerRadiusTopEnd="@dimen/_30dp"
+            app:boxCornerRadiusTopStart="@dimen/_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_et">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:textSize="@dimen/_14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:background="@drawable/linear_green"
+            android:text="@string/sign_up_"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_18sp"
+            android:theme="@style/MyMaterialButtonStyle"
+            app:backgroundTint="@null"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_password_et"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

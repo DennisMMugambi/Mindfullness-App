@@ -41,6 +41,8 @@ class OptionsSuggestionFragment : Fragment(R.layout.fragment_options_suggestion)
         binding.btnGetStarted.setOnClickListener {
             val intent = Intent(requireContext(), HomeActivity::class.java)
             startActivity(intent)
+
+
         }
     }
 
